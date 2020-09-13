@@ -66,7 +66,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, diam et l
 Además se muestran códigos con syntax highlighting de los siguientes lenguajes:
 
 <h2>Lenguaje R</h2>
+#--- Libreria ----
+library(ggplot2)
+
+#--- Datos ----
 <pre class="line-numbers syntx"><code class="language-r">p = read.csv("poblacion.csv", header = TRUE)
+
+#--- Grafica ----
 ggplot(p, aes(x = fecha, y = Nt)) +
   geom_point(shape = 19, size = 4, color='black') +
   geom_errorbar(width = 1, size = 1, aes(ymin = inf, ymax = sup), color = 'black') +
