@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600|Source+Sans+Pro:400,400i,600,600i|Montserrat' rel='stylesheet'/>
+    <link href='https://unpkg.com/dracula-prism/css/dracula-prism.css' rel='stylesheet'/>
+    <!-- link href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.css' rel='stylesheet'/ -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.js'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-r.js'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-latex.js'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.css' rel='stylesheet'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.js'/>
 <style>
-
+.body {
+	font: normal normal 17px Source Sans Pro;
+	color: #30302e;
+	}
+.h1 {
+	font: normal 400 26px Quicksand, sans-serif;
+	}
+.h2 {
+	font: normal 600 17px Quicksand, sans-serif
+	}
+.h3 {
+	font: normal 600 16px Source Sans Pro, sans-serif;
+	}
+.h4 {
+	font: italic 600 16px Source Sans Pro, sans-serif;
+	}
+.a {
+	text-decoration: underline;
+	color: #656e81;
+	/*border-bottom:1px solid #212121;*/
+	}
+.a:hover {
+	color: #30302e;
+	}
+.a:visited {
+	color: #30302e;}
+/*.ul {
+	padding-left: 20px !important;
+	}*/
 </style>
+</head>
 
 <body>
-rociojgo.github.io
+Esta es un texto de ejemplo que muestra <b>texto en negritas</b>, <u>texto con subrayado</u>, <i>texto en itálicas</i>, <a href="#">texto con enlace</a> y distintos encabezados del cuerpo del blog y las páginas: 
+<br /><!--more--><br />
+<h1>Encabezado h1</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, diam et laoreet bibendum, magna diam gravida lorem, in tincidunt est velit pulvinar sapien.  
+<h2>Encabezado h2</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, diam et laoreet bibendum, magna diam gravida lorem, in tincidunt est velit pulvinar sapien. 
+<h3>Encabezado h3</h3>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, diam et laoreet bibendum, magna diam gravida lorem, in tincidunt est velit pulvinar sapien.  
+<h4>Encabezado h4</h4>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, diam et laoreet bibendum, magna diam gravida lorem, in tincidunt est velit pulvinar sapien. 
+<h4>Listas</h4>
+<ul>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetur adipiscing elit</li>
+	<li>Donec semper, diam et laoreet bibendum</li>
+</ul>
+<ol>
+	<li>Magna diam gravida lorem</li>
+	<li>In tincidunt est velit pulvinar sapien</li>
+</ol>
+<br /><br />
+Además se muestran códigos con syntax highlighting de los siguientes lenguajes:
+
+<h2>Lenguaje R</h2>
+<pre class="line-numbers syntx"><code class="language-r">p = read.csv("poblacion.csv", header = TRUE)
+ggplot(p, aes(x = fecha, y = Nt)) +
+  geom_point(shape = 19, size = 4, color='black') +
+  geom_errorbar(width = 1, size = 1, aes(ymin = inf, ymax = sup), color = 'black') +
+  ylim(0,250)
+</code></pre>
+<br />
+
+<h2>Lenguaje LaTeX</h2>
+<pre class="line-numbers syntx"><code class="language-latex">\section*{An\'alisis estad\'istico en R}
+\begin{figure*} % indica inicio de figura
+\begin{center}
+\includegraphics[width=\textwidth]{O_leucura.jpg}\\
+\end{center}
+\caption{\textit{Oenanthe leucura.}}
+\end{figure*}</code></pre>
+<br />
+
+<h2>Lenguaje HTML</h2>
+<pre class="line-numbers syntx"><code class="language-html">&lt;div class="barhome" style="height:100px; background-color:#6acd75;"&gt;&lt;/div&gt;
+&lt;!-- Para colocar barras en otras paginas --&gt;
+&lt;div class="barpub" style="height:100px; background-color:#51a8c7;"&gt;&lt;/div&gt;
+&lt;div class="barres" style="height:100px; background-color:#ff6a5a;"&gt;&lt;/div&gt;</code></pre>
+<br />
+
+<h2>Lenguaje CSS</h2>
+<pre class="line-numbers syntx"><code class="language-css">.bartitle {
+   height:115px;
+   font: normal 600 24px Quicksand,sans-serif;
+   text-align: center;
+   line-height: 115px; /* cambiar la altura de linea del texto y quede centrado */
+   background-color: #169890;
+}
+</code></pre>
 </body>
 </html>
