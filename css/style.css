@@ -4,6 +4,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	color: #30302e;
+	margin: 0;
 	}
 main {
 	max-width: 940px;
@@ -99,7 +100,7 @@ img {
 .topnav {
 	max-width: 100%;
 	overflow: hidden;
-	padding: 5px;
+	padding: 20px 0 0 0;
 }
 
 .topnav a {
@@ -157,5 +158,4 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-bottom: 30px;
 }
