@@ -1,0 +1,42 @@
+body {
+	font-family: Source Sans Pro;
+	font-size: 17px;
+	font-weight: 400;
+	font-style: normal;
+	color: #30302e;
+	max-width: 940px;
+	margin: auto;
+	}
+h1 {
+	font: normal 400 26px Quicksand, sans-serif;
+	}
+h2 {
+	font: normal 600 17px Quicksand, sans-serif;
+	}
+h3 {
+	font: normal 600 16px Source Sans Pro, sans-serif;
+	}
+h4 {
+	font: italic 600 16px Source Sans Pro, sans-serif;
+	}
+a {
+	text-decoration: underline;
+	color: #656e81;
+	}
+a:hover {
+	color: #30302e;
+	}
+a:visited {
+	color: #30302e;
+	}
+
+.rrss {
+	color: #505050;
+	font: normal 400 15px Quicksand, sans-serif;
+	line-height: 1.8;
+	}
+
+.rrss a {
+	text-decoration: none;
+	border-bottom: 1px solid #6485a4;
+	}
