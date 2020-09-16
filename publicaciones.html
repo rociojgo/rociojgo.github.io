@@ -10,19 +10,19 @@
 
 <body>
 <!-- Menu -->
-<div class="topnav" id="myTopnav">
+<div class="topnav" id="topMenu">
 	<a href="/es">Inicio</a>
-	<a href="/publicaciones" class="active">Publicaciones & Presentaciones</a>
+	<a href="#" class="active">Publicaciones & Presentaciones</a>
 	<a href="/investigacion">Investigación</a>
 	<a href="/publications">[English]</a>
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+	<a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
+    <i class="fas fa-bars"></i>
 	</a>	
 </div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
+function collapseMenu() {
+  var x = document.getElementById("topMenu");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
