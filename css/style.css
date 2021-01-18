@@ -3,8 +3,10 @@ body {
 	font-size: 17px;
 	font-weight: 400;
 	font-style: normal;
-	color: #30302e;
+	line-height: 1.5;
+	color: #000 /*30302e*/;
 	margin: 0;
+	
 	}
 main {
 	max-width: 940px;
@@ -30,21 +32,21 @@ b {
 	}
 a {
 	text-decoration: underline;
-	color: #656e81;
+	color: #576B96;
 	}
 a:hover {
-	color: #30302e;
+	color: #000;
 	}
 
 .rrss {
-	color: #505050;
+	color: #30302e;
 	font: normal 500 15px Quicksand, sans-serif;
 	line-height: 1.8;
 	}
 
 .rrss a {
 	text-decoration: none;
-	border-bottom: 1px solid #6485a4;
+	border-bottom: 1px solid #576B96;
 	}
 .rrss a:hover {
 	border-bottom: 1px solid #30302e;
