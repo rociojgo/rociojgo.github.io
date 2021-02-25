@@ -1,11 +1,11 @@
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400|Source+Sans+Pro:400,400i,' rel='stylesheet'></link>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400|Source+Sans+Pro:300,300i|Montserrat:400' rel='stylesheet'></link>
 	<link rel="stylesheet" href="css/style.css"></link>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="GN19DcxYKw5S1uUZo_hrleyqMjbMx1qM_QUX4CU_Cjk" />
 	
 	<title>Rocío J. Guzmán Ojeda</title>
-	<meta name="description" content="Ecóloga y estudiante de Maestría en Ciencias Biológicas en la UNAM."></meta>
+	<meta name="description" content="Ecóloga y Maestra en Ciencias Biológicas. | Ecologist and Master of Biological Sciences."></meta>
 	
 <style>
 body {
@@ -15,18 +15,26 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	color: white;
 }
 
 .namen {
 	font: normal 300 40px Quicksand, sans-serif;
-	color: white; 
 	text-align: center;
 	margin-top: 20%;
 }
 
+.desc {
+	font: normal 400 15px Montserrat, sans-serif;
+	letter-spacing: 2px;
+	padding-top: 20px;
+	text-align: center;
+}
+
 .col-3 {
 	text-align: center;
-	font: normal 400 20px Source Sans Pro, sans-serif;
+	font: normal 400 17px Montserrat, sans-serif;
+	letter-spacing: 3px;
 	margin-top: 50px;
 }
 
@@ -35,7 +43,7 @@ body {
 	text-decoration: none;
 	padding: 10px 30px;
 	border: 1px solid white;
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 }
 
 .col-3 a:hover {
@@ -48,13 +56,14 @@ body {
 <body>
 <div class="row">
 <div class="col-12">
-<div class="namen">Ecól. Rocío J. Guzmán Ojeda</div>
+<div class="namen">Rocío J. Guzmán Ojeda</div>
+<!--div class="desc">Ecología de macroinvertebrados acuáticos.</div-->
 </div>
 </div>
 
 <div class="row">
 <div class="col-3"></div>
-<div class="col-3"><a href="/es">Español</a></div>
-<div class="col-3"><a href="/en">English</a></div>
+<div class="col-3"><a href="/es">ESPAÑOL</a></div>
+<div class="col-3"><a href="/en">ENGLISH</a></div>
 <div class="col-3"></div>
 </div>
