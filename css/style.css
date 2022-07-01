@@ -37,6 +37,10 @@ a {
 a:hover {
 	color: #000;
 	}
+	
+code {
+	font: normal 400 16px Source Code Pro, sans-serif;
+}
 
 .rrss {
 	color: #30302e;
@@ -60,6 +64,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	pointer-events: none;
 }
 
 .bartop {
@@ -68,6 +73,7 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	pointer-events: none;
 }
 
 /*---- Menu ----*/
@@ -76,6 +82,7 @@ img {
 	background-color: #fff;
 	/*position: sticky;
 	top: 0;*/
+	z-index: 100;
 }
 
 .topnav a {
@@ -99,6 +106,8 @@ img {
 	font-weight: 600;
 	border-bottom: 2px #30302e solid;
 }
+.topnav .t {cursor: default;}
+.topnav .t:hover {border-bottom: 1px #fff solid;}
 
 .topnav .icon {
 	display: none;
@@ -128,6 +137,7 @@ img {
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
+.col-2a {width: 20%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}

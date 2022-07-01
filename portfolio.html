@@ -1,0 +1,170 @@
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600|Source+Sans+Pro:400,400i,600,600i|Source+Code+Pro:400,400i|Montserrat' rel='stylesheet'></link>
+	<link rel="stylesheet" href="css/fontawesome.css"></link>
+	<link rel="stylesheet" href="css/style.css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Portafolio | Rocío J. Guzmán Ojeda</title>
+	<meta name="description" content="Ilustración científica tradicional y digital"></meta>
+	
+<style>
+.icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid #f1f1f1;
+  padding: 10px;
+}
+
+.collapsible .active, .collapsible:hover {
+	color: #fff;
+	background: #30302e;
+	border: 2px solid #fff;
+}
+
+.collapsible:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f078';
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible .active:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  font-weight: 400;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+main {
+	max-width: 95% !important;
+	}
+	
+.gallery {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.gallery img {
+	width: 100%;
+	cursor: pointer;
+	transition: 0.4s;
+	pointer-events: auto !important;
+}
+
+.gallery img:hover {
+	filter: brightness(75%);
+	/*transform: scale(1.1);*/
+}
+
+.full-img {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+}
+
+.full-img img {
+	width: 90%;
+	max-width: 500px;
+	pointer-events: none;
+}
+
+.full-img span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<!-- Menu -->
+<div class="topnav" id="topMenu">
+	<a class="t">Rocío J. Guzmán Ojeda</a>
+
+	</a>	
+</div>
+
+<main>
+<h1 style="font-size: 2em; font-weight: 500; text-align: center;">Portfolio</h1>
+<div style="text-align: center; font: normal 400 17px Quicksand, sans-serif;"><a style="text-decoration: none;" href="https://instagram.com/rocio.jgo"><i class="fab fa-instagram"></i></a> | 
+<i class="fas fa-envelope"></i> rocio.j.guzman@gmail.com
+</div>
+
+<div class="row" style="margin-top: 5%;">
+<div class="col-2"><h1 style="font-weight: 400;">Traditional</h1></div>
+<div class="col-10">
+	<div class="full-img" id="fullImgBox">
+		<img src="images/img.jpg" id="fullImg">
+		<span onclick="closeFullImg()">×</span>
+	</div>
+	
+	<div class="gallery">
+		<img src="images/il/img1.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+		<img src="images/il/img2.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+		<img src="images/il/img3.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+		<img src="images/il/img4.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+		<img src="images/il/img5.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+		<img src="images/il/img6.jpg" onclick="openFullImg(this.src)" oncontextmenu="return false;">
+	</div>
+</div>
+</div>
+
+<div class="row" style="margin-top: 5%;">
+<div class="col-2"><h1 style="font-weight: 400;">Digital (Vectors)</h1></div>
+<div class="col-10">
+	<div class="full-img" id="fullImgBox">
+		<img src="images/img.jpg" id="fullImg">
+		<span onclick="closeFullImg()">×</span>
+	</div>
+	
+	<div class="gallery">
+		<img src="images/il/img7.png" onclick="openFullImg(this.src)">
+		<img src="images/il/img8.png" onclick="openFullImg(this.src)">
+		<img src="images/il/img9.png" onclick="openFullImg(this.src)">
+	</div>
+</div>
+</div> 
+<br /><br />
+
+<script>
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(image) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = image;
+}
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
+</script>
+
+</main>
+</body>
