@@ -158,7 +158,7 @@ img {
 }
 
 /*---- Mobile ----*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	body {font-size: 1.1em;}
 	.rrss {font-size: 1.1em;}
 	h1 {font-size: 29px;}
