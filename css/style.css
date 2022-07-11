@@ -4,10 +4,10 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.5;
-	color: #000 /*30302e*/;
+	color: black;
 	margin: 0;
-	
 	}
+	
 main {
 	max-width: 940px;
 	margin: auto;
@@ -51,11 +51,9 @@ code {
 .rrss a {
 	text-decoration: none;
 	color: #30302e;
-	/*border-bottom: 1px solid #576B96;*/
 	}
 .rrss a:hover {
 	color: #576B96;
-	/* border-bottom: 1px solid #30302e;*/	
 	}
 
 img {
@@ -69,7 +67,7 @@ img {
 
 .bartop {
 	height:130px;
-	background-image:url(https://rociojgo.github.io/images/Acanthagrion-tandem-RocioJGO.JPG);
+	background-image:url(../images/Acanthagrion-tandem-RocioJGO.JPG);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -128,7 +126,7 @@ img {
 	background: #30302e;
 }
 
-/*---- Responsive Grid ----*/
+/*---- Responsive Columns ----*/
 .row::after {
 	content: "";
 	clear: both;
@@ -161,13 +159,13 @@ img {
 
 /*---- Mobile ----*/
 @media only screen and (max-width: 768px) {
-	body {
-		font-size: 19px;
-	}
-	.rrss {
-		font-size: 17px;
-	}
-/* Responsive Grid */
+	body {font-size: 1.1em;}
+	.rrss {font-size: 1.1em;}
+	h1 {font-size: 29px;}
+	h2 {font-size: 19;}
+	h3, h4 {font-size: 18px;}
+	
+/* Responsive Columns */
   [class*="col-"] {
 	width: 100%;
   }
