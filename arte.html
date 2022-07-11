@@ -1,62 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600|Source+Sans+Pro:400,400i,600,600i|Source+Code+Pro:400,400i|Montserrat' rel='stylesheet'></link>
-	<link rel="stylesheet" href="css/fontawesome.css"></link>
-	<link rel="stylesheet" href="css/style.css"></link>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600|Source+Sans+Pro:400,400i,600,600i|Montserrat' rel='stylesheet' />
+	<link rel="stylesheet" href="css/fontawesome.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-	<title>Portafolio | Rocío J. Guzmán Ojeda</title>
-	<meta property="og:title" content="Portafolio | Rocío J. Guzmán Ojeda" />
+	<title>Portafolio | rocio.jgo</title>
+	<meta property="og:title" content="Portafolio | rocio.jgo" />
 	<meta property="og:image" content="images/il/img1.jpg" />
-	<meta name="description" content=" Ilustración tradicional y digital"></meta>
+	<meta name="description" content=" Ilustración tradicional y digital" />
 	<meta property="og:description" content="Ilustración tradicional y digital" />
 	<meta name="twitter:card" content="summary" />
 	
 <style>
-.icon::after {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  border: 2px solid #f1f1f1;
-  padding: 10px;
-}
-
-.collapsible .active, .collapsible:hover {
-	color: #fff;
-	background: #30302e;
-	border: 2px solid #fff;
-}
-
-.collapsible:after {
-  font-family: "Font Awesome 5 Free";
-  content: '\f078';
-  float: right;
-  margin-left: 5px;
-}
-
-.collapsible .active:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f077";
-  font-weight: 400;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+body {
+	font: normal 400 15px Montserrat, sans-serif !important; 
+	line-height: 2 !important;
 }
 
 main {
 	max-width: 95% !important;
-	}
+}
+
+.menu {
+	display: block;
+	margin: 15px 16px;
+	text-align: center;
+}
+
+.menu .lang{
+	color: #a1a1a1;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 1px solid #a1a1a1;
+	font: normal 400 14px Montserrat, sans-serif;
+	letter-spacing: 2px;
+	margin: 20px;
+}
+
+.menu .lang:hover{
+	color: white;
+	background: #30302e;
+	border: 1px solid #30302e;
+}
 	
 .gallery {
 	width: 90%;
@@ -105,38 +93,35 @@ main {
 	color: white;
 	cursor: pointer;
 }
+
+.ribbon {
+	margin: 20px;
+	font-size: 22px;
+	word-spacing: 20px;
+}
+
+.ribbon a {
+	color: black;
+}
+
+.ribbon a:hover {
+	color: #a1a1a1;
+}
+
 </style>
 </head>
 
 <body>
-<!-- Menu -->
-<div class="topnav" id="topMenu">
-	<a href="/es">Rocío J. Guzmán Ojeda</a>
-	<a href="/art" class="lang" style="text-align: center;">ENGLISH</a>
-	<a href="https://instagram.com/rocio.jgo"><i class="fab fa-instagram"></i></a>
-	<a href="https://rociojgo.tumblr.com"><i class="fab fa-tumblr"></i></a>
-	<a href="javascript:void(0);" class="icon" onclick="collapseMenu()">
-    <i class="fas fa-bars"></i>
-	</a>	
+<main>
+<h1 style="font-size: 34px; font-weight: 500; text-align: center; margin-bottom: 50px;">rocio.jgo</h1>
+<div class="menu">
+<a href="/art" class="lang" style="text-align: center;">ENGLISH</a>
 </div>
 
-<script>
-function collapseMenu() {
-  var x = document.getElementById("topMenu");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<main>
-<h1 style="font-size: 2em; font-weight: 500; text-align: center;">Portafolio</h1>
 <div class="row" style="max-width: 940px; margin: auto;">
-<div class="col-12" style="font: normal 400 17px Quicksand, sans-serif; line-height: 2;">
+<div class="col-12">
 Realizo ilustraciones científicas y artísticas, aquí se encuentran algunas de ellas. ¿Quieres una ilustración para tu proyecto, tesis, artículo o una obra para adornar tu hogar? Contáctame:<br /> 
-<div style="text-align: center; font: normal 400 17px Quicksand, sans-serif; line-height: 2;"><i class="far fa-envelope"></i> <span> </span> rocio.j.guzman@gmail.com</div>
+<div style="text-align: center;"><i class="far fa-envelope"></i> <span> </span> rocio.j.guzman@gmail.com</div>
 </div>
 </div>
 
@@ -174,7 +159,7 @@ Realizo ilustraciones científicas y artísticas, aquí se encuentran algunas de
 	</div>
 </div>
 </div> 
-<br /><br />
+<br />
 
 <script>
 var fullImgBox = document.getElementById("fullImgBox");
@@ -190,4 +175,10 @@ function closeFullImg() {
 </script>
 
 </main>
+<div class="ribbon" style="display: block; text-align: center;">
+	<a href="https://instagram.com/rocio.jgo"><i class="fab fa-instagram"></i></a> 
+	<a href="https://rociojgo.tumblr.com"><i class="fab fa-tumblr"></i></a>	
+	<br /><br />
+</div>
 </body>
+</html>

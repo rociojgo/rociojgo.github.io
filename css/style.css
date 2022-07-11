@@ -1,8 +1,5 @@
 body {
-	font-family: Source Sans Pro;
-	font-size: 17px;
-	font-weight: 400;
-	font-style: normal;
+	font: normal 400 17px Source Sans Pro;
 	line-height: 1.5;
 	color: black;
 	margin: 0;
@@ -159,8 +156,8 @@ img {
 
 /*---- Mobile ----*/
 @media only screen and (max-width: 800px) {
-	body {font-size: 1.1em;}
-	.rrss {font-size: 1.1em;}
+	body {font-size: 19px;}
+	.rrss {font-size: 17px;}
 	h1 {font-size: 29px;}
 	h2 {font-size: 19;}
 	h3, h4 {font-size: 18px;}
