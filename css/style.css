@@ -71,10 +71,16 @@ img {
 	pointer-events: none;
 }
 
+.barbottom {
+	height: 50px;
+	display: block;
+	background: white;
+}
+
 /*---- Menu ----*/
 .topnav {
 	overflow: hidden;
-	background-color: #fff;
+	background-color: white;
 	/*position: sticky;
 	top: 0;*/
 	z-index: 100;
@@ -89,7 +95,7 @@ img {
 	padding: 5px;
 	text-decoration: none;
 	font: normal 500 16px Quicksand, sans-serif;
-	border-bottom: 1px #fff solid;
+	border-bottom: 1px white solid;
 	transition: max-height 0.2s ease-out;
 }
 
@@ -102,7 +108,7 @@ img {
 	border-bottom: 2px #30302e solid;
 }
 .topnav .t {cursor: default;}
-.topnav .t:hover {border-bottom: 1px #fff solid;}
+.topnav .t:hover {border-bottom: 1px white solid;}
 
 .topnav .icon {
 	display: none;
