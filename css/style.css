@@ -201,11 +201,11 @@ img {
 /* font icon */
 @font-face {
   font-family: 'icomoon';
-  src:  url('../webfonts/icomoon.eot?ncnu3z');
-  src:  url('../webfonts/icomoon.eot?ncnu3z#iefix') format('embedded-opentype'),
-    url('../webfonts/icomoon.ttf?ncnu3z') format('truetype'),
-    url('../webfonts/icomoon.woff?ncnu3z') format('woff'),
-    url('../webfonts/icomoon.svg?ncnu3z#icomoon') format('svg');
+  src:  url('./webfonts/icomoon.eot?ncnu3z');
+  src:  url('./webfonts/icomoon.eot?ncnu3z#iefix') format('embedded-opentype'),
+    url('./webfonts/icomoon.ttf?ncnu3z') format('truetype'),
+    url('./webfonts/icomoon.woff?ncnu3z') format('woff'),
+    url('./webfonts/icomoon.svg?ncnu3z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
